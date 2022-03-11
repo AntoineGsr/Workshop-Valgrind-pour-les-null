@@ -17,7 +17,7 @@ OBJ1	=	$(SRC1:.c=.o)
 OBJ2	=	$(SRC2:.c=.o)
 OBJ3	=	$(SRC3:.c=.o)
 
-CFLAGS	=	-I./include/ -g
+CFLAGS	=	-I./include/ #-g
 CFLAGS	+=	-w #You're authorize to comment this line
 #CFLAGS	+=	-Wall -Wextra -Wshadow -Wformat-security #You're authorize to uncomment this line
 
