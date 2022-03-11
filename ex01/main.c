@@ -13,7 +13,7 @@ static void display_array(const char *str)
 
     strcat(new, str);
     free(new);
-    for (int a = 0; a < strlen(new); a++)
+    for (int a; a < strlen(new); a++)
         printf("%c", new[a]);
     printf("\n");
     free(new);
