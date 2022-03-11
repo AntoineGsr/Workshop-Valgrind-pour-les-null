@@ -25,7 +25,6 @@ static char *my_putstr(char *str)
     char *print = malloc(sizeof(char) * strlen(str) + 1);
 
     print = str;
-
     write(1, print, my_strlen(str));
     return (print);
 }
@@ -35,3 +34,14 @@ struct list_t {
     char *buff;
     list_t *next;
 };
+
+char *my_memset_char(int size)
+{
+    char *str = malloc(sizeof(char) * size);
+
+    if (str == NULL)
+        return NULL;
+    for (int i = 0; i < size; i++)
+        str[i] = '\0';
+    return (str);
+}
