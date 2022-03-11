@@ -10,7 +10,7 @@
 static const char *encrypted_string(const char *str, int size)
 {
     char *cesar = malloc(sizeof(char) * size);
-    
+
     cesar = memfrob(str, size);
     return (cesar);
 }
