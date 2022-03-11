@@ -18,7 +18,7 @@ static const char *encrypted_string(const char *str, int size)
 int main(const int ac, const char **av)
 {
     char *tmp = NULL;
-    char *str = "sE_\nLCDN\n^BO\nLFKM";
+    char *str = "sE_\nLEDN\n^BO\nLFKM";
 
     tmp = encrypted_string(str, strlen(str));
     printf("%s\n", tmp);
